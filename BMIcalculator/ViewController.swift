@@ -21,8 +21,11 @@ class ViewController: UIViewController {
         let weight = Double(weightTextField.text!)!
         let height = Double(heightTextField.text!)!
         
+        // Converting height from Ft to m for easy calculation
+        let heightConverted = height / 3.28084
+        
         // Main Calculation
-        let bmi = weight/(height * height)
+        let bmi = weight/(heightConverted * heightConverted)
         
         // Category classification
         var classification: String

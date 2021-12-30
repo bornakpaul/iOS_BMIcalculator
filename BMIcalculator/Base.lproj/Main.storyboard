@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrQ-Ee-bZD">
-                                <rect key="frame" x="81" y="594" width="253" height="55"/>
+                                <rect key="frame" x="20" y="594" width="374" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="C4W-X8-g0f"/>
-                                    <constraint firstAttribute="width" constant="253" id="jIC-gq-w1k"/>
+                                    <constraint firstAttribute="width" constant="374" id="9D3-5n-Dst"/>
+                                    <constraint firstAttribute="height" constant="55" id="Ubt-0U-pWQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -28,26 +28,28 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB0-q7-4CL">
                                 <rect key="frame" x="82" y="71" width="250" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="uot-Cf-pYY"/>
+                                    <constraint firstAttribute="height" constant="38.5" id="wEK-cv-36O"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
                                 <color key="textColor" red="0.16078431369999999" green="0.47058823529999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Height" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xCb-57-YnG">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Height (ft)" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xCb-57-YnG">
                                 <rect key="frame" x="20" y="205" width="374" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="EGZ-wa-P6t"/>
-                                    <constraint firstAttribute="height" constant="34" id="eWf-BM-VLU"/>
-                                    <constraint firstAttribute="width" constant="374" id="r5Z-Sd-4Yh"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="vFp-si-YmS"/>
+                                    <constraint firstAttribute="height" constant="34" id="2Uu-5k-qo8"/>
+                                    <constraint firstAttribute="width" constant="374" id="Prs-Zy-E9g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Weight" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Jh-DG-Jal">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Weight (kg)" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Jh-DG-Jal">
                                 <rect key="frame" x="20" y="291" width="374" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="KeY-cL-1G7"/>
-                                    <constraint firstAttribute="width" constant="374" id="run-2y-XK5"/>
+                                    <constraint firstAttribute="height" constant="34" id="9dq-K0-H6A"/>
+                                    <constraint firstAttribute="width" constant="374" id="Gsa-d8-4QY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -55,8 +57,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npB-oq-Kpa">
                                 <rect key="frame" x="111" y="402" width="192" height="47"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="192" id="3il-xD-aby"/>
-                                    <constraint firstAttribute="height" constant="47" id="uE9-UX-wqY"/>
+                                    <constraint firstAttribute="height" constant="47" id="6qA-B8-kc5"/>
+                                    <constraint firstAttribute="width" constant="192" id="Y1Z-IJ-Bds"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Calculate BMI"/>
@@ -68,21 +70,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xCb-57-YnG" secondAttribute="trailing" constant="20" id="7uj-Zd-JgY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cB0-q7-4CL" secondAttribute="trailing" constant="82" id="9vw-eK-9bm"/>
-                            <constraint firstItem="xCb-57-YnG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E39-cY-BRi"/>
-                            <constraint firstItem="3Jh-DG-Jal" firstAttribute="top" secondItem="xCb-57-YnG" secondAttribute="bottom" constant="52" id="KbM-c8-Wff"/>
-                            <constraint firstItem="3Jh-DG-Jal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LnE-aO-UQQ"/>
-                            <constraint firstItem="cB0-q7-4CL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="OPh-zi-5My"/>
-                            <constraint firstItem="npB-oq-Kpa" firstAttribute="top" secondItem="3Jh-DG-Jal" secondAttribute="bottom" constant="77" id="S3r-Pc-DU1"/>
-                            <constraint firstItem="cB0-q7-4CL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Xaa-Zk-xGV"/>
-                            <constraint firstItem="npB-oq-Kpa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="ZPN-7c-nXs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WrQ-Ee-bZD" secondAttribute="trailing" constant="80" id="cEy-Th-kXG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="npB-oq-Kpa" secondAttribute="trailing" constant="111" id="cU4-IK-6UL"/>
-                            <constraint firstItem="WrQ-Ee-bZD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="ekt-NL-Pnb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Jh-DG-Jal" secondAttribute="trailing" constant="20" id="hrF-rf-DQO"/>
-                            <constraint firstItem="xCb-57-YnG" firstAttribute="top" secondItem="cB0-q7-4CL" secondAttribute="bottom" constant="95.5" id="lLC-3U-5Ta"/>
-                            <constraint firstItem="WrQ-Ee-bZD" firstAttribute="top" secondItem="npB-oq-Kpa" secondAttribute="bottom" constant="145" id="oev-Mx-wg1"/>
+                            <constraint firstItem="npB-oq-Kpa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="AB1-LT-PBR"/>
+                            <constraint firstItem="cB0-q7-4CL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Esh-Pp-WMg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="npB-oq-Kpa" secondAttribute="trailing" constant="111" id="Jcv-1c-5sI"/>
+                            <constraint firstItem="xCb-57-YnG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PX4-Us-uq3"/>
+                            <constraint firstItem="cB0-q7-4CL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="Q7d-GN-rjC"/>
+                            <constraint firstItem="WrQ-Ee-bZD" firstAttribute="top" secondItem="npB-oq-Kpa" secondAttribute="bottom" constant="145" id="RD3-2Y-e4B"/>
+                            <constraint firstItem="xCb-57-YnG" firstAttribute="top" secondItem="cB0-q7-4CL" secondAttribute="bottom" constant="95.5" id="drB-Lm-mDX"/>
+                            <constraint firstItem="3Jh-DG-Jal" firstAttribute="top" secondItem="xCb-57-YnG" secondAttribute="bottom" constant="52" id="e1H-tR-ahq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Jh-DG-Jal" secondAttribute="trailing" constant="20" id="gJb-io-1GM"/>
+                            <constraint firstItem="npB-oq-Kpa" firstAttribute="top" secondItem="3Jh-DG-Jal" secondAttribute="bottom" constant="77" id="pKK-Mj-DwQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cB0-q7-4CL" secondAttribute="trailing" constant="82" id="qIq-b5-SRa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xCb-57-YnG" secondAttribute="trailing" constant="20" id="tQg-D9-nXX"/>
+                            <constraint firstItem="3Jh-DG-Jal" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tof-MY-bl1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WrQ-Ee-bZD" secondAttribute="trailing" constant="20" id="wXB-B1-nar"/>
+                            <constraint firstItem="WrQ-Ee-bZD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wyz-Fb-3eu"/>
                         </constraints>
                     </view>
                     <connections>
