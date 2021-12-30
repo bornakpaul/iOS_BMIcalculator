@@ -21,9 +21,10 @@ class ViewController: UIViewController {
         let weight = Double(weightTextField.text!)!
         let height = Double(heightTextField.text!)!
         
+        // Main Calculation
         let bmi = weight/(height * height)
         
-        // bmiLabel.text = String(bmi)
+        // Category classification
         var classification: String
         
         if bmi < 18.5 {
@@ -36,7 +37,10 @@ class ViewController: UIViewController {
             classification = "Obese"
         }
         
+        // String Interpolation
         let formattedBMI = String(format: "%1f", bmi)
+        
+        // result
         bmiLabel.text = "BMI: \(formattedBMI), \(classification)"
         
     }
